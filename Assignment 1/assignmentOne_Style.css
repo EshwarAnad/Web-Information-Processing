@@ -1,0 +1,78 @@
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 19px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 19px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.tg .tg-eqy4 {
+    text-align: right;
+    vertical-align: top
+}
+
+.tg .tg-lqy6 {
+    text-align: right;
+    vertical-align: top;
+
+}
+
+.tg .tg-6qw1 {
+    background-color: #c0c0c0;
+    text-align: center;
+    vertical-align: top
+}
+
+.tg .tg-yw4l {
+    vertical-align: top
+}
+
+.button {
+    margin: auto;
+    display: block;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+}
+textarea {
+    font-family:Arial, Helvetica, sans-serif; width: 1000px; height: 450px;
+}
+
+
+#unsub{
+    font-family: sans-serif;
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .tg {
+        width: auto !important;
+    }
+
+    .tg col {
+        width: auto !important;
+    }
+}

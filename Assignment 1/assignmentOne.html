@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grades</title>
+    <link rel="stylesheet" href="assignmentOne_Style.css">
+    <script src="assignmentOne_Script.js"></script>
+</head>
+<body>
+
+<div class="tg-wrap" align="center">
+    <table class="tg" id="table" onkeyup="clicked(); calculate()">
+        <tr>
+            <th class="tg-6qw1" rowspan="2">Name</th>
+            <th class="tg-6qw1" rowspan="2">ID Number</th>
+            <th class="tg-6qw1" colspan="5">Results</th>
+            <th class="tg-6qw1" rowspan="2">Final Grade</th>
+        </tr>
+        <tr>
+            <td class="tg-6qw1">Assignment 1</td>
+            <td class="tg-6qw1">Assignment 2</td>
+            <td class="tg-6qw1">Assignment 3</td>
+            <td class="tg-6qw1">Assignment 4</td>
+            <td class="tg-6qw1">Assignment 5</td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l" contenteditable=true>Paul</td>
+            <td class="tg-yw4l" contenteditable=true>121994</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-eqy4" id="s1"></td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l" contenteditable=true>Bob</td>
+            <td class="tg-yw4l" contenteditable=true>121334</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-eqy4" id="s2"> </td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l" contenteditable=true>Susan</td>
+            <td class="tg-yw4l" contenteditable=true>121334</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-eqy4"></td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l" contenteditable=true>Mary</td>
+            <td class="tg-yw4l" contenteditable=true>121112</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-eqy4"></td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l" contenteditable=true>John</td>
+            <td class="tg-yw4l" contenteditable=true>121933</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-eqy4"></td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l" contenteditable=true>Debbie</td>
+            <td class="tg-yw4l" contenteditable=true>121878</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-eqy4"></td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l" contenteditable=true>Margaret</td>
+            <td class="tg-yw4l" contenteditable=true>121657</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-eqy4"></td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l" contenteditable=true>Phil</td>
+            <td class="tg-yw4l" contenteditable=true>121456</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-eqy4"></td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l" contenteditable=true>Tyler</td>
+            <td class="tg-yw4l" contenteditable=true>121554</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-eqy4"></td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l" contenteditable=true>Kate</td>
+            <td class="tg-yw4l" contenteditable=true>121555</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-lqy6" contenteditable=true>-</td>
+            <td class="tg-eqy4"></td>
+        </tr>
+    </table>
+
+</div>
+
+<div align="center">
+    <button class="button" onclick= "calculate()">Calculate!</button>
+    <p id="unsub"></p>
+    <input type="button" class="button" value="Clear Field" onClick="window.location.reload()"><br>
+    <input type="button" class="button" onclick="cSV();" value= "CSV Representation">
+    <textarea title="text area" id="CSV"></textarea>
+
+</div>
+
+</body>
+</html>
